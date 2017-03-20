@@ -5,4 +5,4 @@ Given s = "hello", return "olleh".
 
 Difficulty: Easy
 
-https://leetcode.com/problems/reverse-string/#/description
+https://leetcode.com/problems/reverse-string/
