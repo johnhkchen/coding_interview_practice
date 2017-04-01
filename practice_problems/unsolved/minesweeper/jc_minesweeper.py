@@ -96,13 +96,32 @@ squaresUncovered = 0;
 while keepPlaying:
   cls()
   drawMinefield(minefield,fieldWidth,fieldHeight)
-  userInputX = int(input('Where to sweep X ({}/{})>'.format(squaresUncovered, fieldWidth*fieldHeight-numMines)))
-  userInputY = int(input('Where to sweep Y ({}/{})>'.format(squaresUncovered, fieldWidth*fieldHeight-numMines)))
+
+  # Get user X
+  while True:
+    try:
+      userInputX = int(input('Where to sweep X ({}/{})>'.format(squaresUncovered, fieldWidth*fieldHeight-numMines)))
+    except ValueError:
+      print("That was not a valid input. Try again.")
+      continue
+    break
+
+  # Get user Y
+  while True:
+    try:
+      userInputY = int(input('Where to sweep Y ({}/{})>'.format(squaresUncovered, fieldWidth*fieldHeight-numMines)))
+    except ValueError:
+      print("That was not a valid input. Try again.")
+      continue
+    break
+
+  import pdb
+  pdb.set_trace()
+
   keepPlaying = sweepSpot(minefield, fieldWidth, fieldHeight, userInputX, userInputY) and (squaresUncovered < fieldWidth*fieldHeight-numMines)
-  #input('Continue?');
 
 if squaresUncovered == fieldWidth*fieldHeight-numMines:
-  print("You won!")
+  print("You won! All {} mines have been discovered.".format(numMines))
 else:
   print("You lose.")
 print("Game Over.")
