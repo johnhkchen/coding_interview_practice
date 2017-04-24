@@ -1,0 +1,7 @@
+Recreate the webpage as seen in the accompanying image (completed.png)
+
+Requrements:
+1 Title
+1 Image (Use rusty.jpg)
+1 List
+1 Link (Possible url: https://www.instagram.com/dogsofinstagram/?hl=en)

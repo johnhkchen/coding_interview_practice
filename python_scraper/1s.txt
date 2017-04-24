@@ -1,0 +1,63 @@
+
+
+Enqueueing URL: http://triplebyte.github.io/web-crawler-test-site/test3/
+
+
+url enqueued: http://triplebyte.github.io/web-crawler-test-site/test3/
+spawning a crawler to look at http://triplebyte.github.io/web-crawler-test-site/test3/
+crawling with GET request: http://triplebyte.github.io/web-crawler-test-site/test3/
+url enqueued: http://triplebyte.github.io/web-crawler-test-site/css/main.css
+spawning a crawler to look at http://triplebyte.github.io/web-crawler-test-site/css/main.css
+crawling with HEAD request: http://triplebyte.github.io/web-crawler-test-site/css/main.css
+url enqueued: http://triplebyte.github.io//web-crawler-test-site/test3/
+spawning a crawler to look at http://triplebyte.github.io//web-crawler-test-site/test3/
+crawling with GET request: http://triplebyte.github.io//web-crawler-test-site/test3/
+url enqueued: http://triplebyte.github.io//web-crawler-test-site/feed.xml
+spawning a crawler to look at http://triplebyte.github.io//web-crawler-test-site/feed.xml
+crawling with GET request: http://triplebyte.github.io//web-crawler-test-site/feed.xml
+url enqueued: http://triplebyte.github.io/web-crawler-test-site/
+spawning a crawler to look at http://triplebyte.github.io/web-crawler-test-site/
+crawling with GET request: http://triplebyte.github.io/web-crawler-test-site/
+url enqueued: http://triplebyte.github.io/web-crawler-test-site/test3/page2
+finalize crawl: http://triplebyte.github.io/web-crawler-test-site/test3/
+spawning a crawler to look at http://triplebyte.github.io/web-crawler-test-site/test3/page2
+crawling with GET request: http://triplebyte.github.io/web-crawler-test-site/test3/page2
+finalize crawl: http://triplebyte.github.io/web-crawler-test-site/css/main.css
+finalize crawl: http://triplebyte.github.io//web-crawler-test-site/test3/
+url enqueued: http://triplebyte.github.io//web-crawler-test-site/test3/page2.html
+spawning a crawler to look at http://triplebyte.github.io//web-crawler-test-site/test3/page2.html
+crawling with GET request: http://triplebyte.github.io//web-crawler-test-site/test3/page2.html
+url enqueued: http://blah.com:7081
+spawning a crawler to look at http://blah.com:7081
+crawling with HEAD request: http://blah.com:7081
+url enqueued: http://blah.com:7082
+url enqueued: http://blah.com:7083
+url enqueued: http://blah.com:7084
+url enqueued: http://blah.com:7085
+url enqueued: http://blah.com:7086
+url enqueued: http://blah.com:7087
+url enqueued: http://blah.com:7088
+url enqueued: http://blah.com:7089
+url enqueued: http://blah.com:7090
+url enqueued: http://blah.com:7091
+finalize crawl: http://triplebyte.github.io/web-crawler-test-site/test3/page2
+spawning a crawler to look at http://blah.com:7091
+url enqueued: http://triplebyte.github.io//web-crawler-test-site/
+finalize crawl: http://triplebyte.github.io/web-crawler-test-site/
+spawning a crawler to look at http://triplebyte.github.io//web-crawler-test-site/
+crawling with HEAD request: http://blah.com:7091
+crawling with GET request: http://triplebyte.github.io//web-crawler-test-site/
+finalize crawl: http://triplebyte.github.io//web-crawler-test-site/test3/page2.html
+spawning a crawler to look at http://blah.com:7090
+finalize crawl: http://triplebyte.github.io//web-crawler-test-site/
+spawning a crawler to look at http://blah.com:7089
+crawling with HEAD request: http://blah.com:7089
+crawling with HEAD request: http://blah.com:7090
+error! When crawling http://blah.com:7081, got a HTTPConnectionPool(host='blah.com', port=7081): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x10d6d22b0>, 'Connection to blah.com timed out. (connect timeout=0.1)')) (linked from ['http://triplebyte.github.io/web-crawler-test-site/test3/page2', 'http://triplebyte.github.io//web-crawler-test-site/test3/page2.html'])
+error! When crawling http://blah.com:7091, got a HTTPConnectionPool(host='blah.com', port=7091): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x10d6d2ac8>, 'Connection to blah.com timed out. (connect timeout=0.1)')) (linked from ['http://triplebyte.github.io/web-crawler-test-site/test3/page2', 'http://triplebyte.github.io//web-crawler-test-site/test3/page2.html'])
+finalize crawl: http://triplebyte.github.io//web-crawler-test-site/feed.xml
+spawning a crawler to look at http://blah.com:7088
+crawling with HEAD request: http://blah.com:7088
+error! When crawling http://blah.com:7089, got a HTTPConnectionPool(host='blah.com', port=7089): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x10ccab668>, 'Connection to blah.com timed out. (connect timeout=0.1)')) (linked from ['http://triplebyte.github.io/web-crawler-test-site/test3/page2', 'http://triplebyte.github.io//web-crawler-test-site/test3/page2.html'])
+error! When crawling http://blah.com:7090, got a HTTPConnectionPool(host='blah.com', port=7090): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x10d6ecef0>, 'Connection to blah.com timed out. (connect timeout=0.1)')) (linked from ['http://triplebyte.github.io/web-crawler-test-site/test3/page2', 'http://triplebyte.github.io//web-crawler-test-site/test3/page2.html'])
+error! When crawling http://blah.com:7088, got a HTTPConnectionPool(host='blah.com', port=7088): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x10cd0fb00>, 'Connection to blah.com timed out. (connect timeout=0.1)')) (linked from ['http://triplebyte.github.io/web-crawler-test-site/test3/page2', 'http://triplebyte.github.io//web-crawler-test-site/test3/page2.html'])
