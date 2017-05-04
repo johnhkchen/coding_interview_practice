@@ -8,14 +8,11 @@ def nextCollatzNumber(num):
                 return int(3*num+1)
 
 def chainLength(num):
-        if num in chainLengths:
-                return chainLengths[num]
-
-        nextNum = nextCollatzNumber(num)
-        if nextNum not in chainLengths:
-                chainLengths[nextNum] = chainLength(nextNum)
-        chainLengths[num] = chainLengths[nextNum]+1
-
+        if num not in chainLengths:
+                nextNum = nextCollatzNumber(num)
+                if nextNum not in chainLengths:
+                        chainLengths[nextNum] = chainLength(nextNum)
+                chainLengths[num] = chainLengths[nextNum]+1
         return chainLengths[num]
 
 maxValue = 1000000
