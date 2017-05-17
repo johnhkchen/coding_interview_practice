@@ -1,24 +1,12 @@
-def main():
-        try:
-                print(totalNameScore(getNames()))
-        except:
-                print("names.txt missing, or invalid format")
+def main():   
+    names = sorted(map(lambda dirtyName: dirtyName[1:-1], open('names.txt').readline().split(','))) 
+    atoi = dict(map(lambda x: (chr(ord('A')+x), x+1), range(26)))
+    print(sum(map(lambda i: (i+1)*sum(map(lambda c: atoi[c], names[i])), range(len(names)))))
 
-def getNames():
-        dirtyNames = open('names.txt').readline().split(',')
-        # Trim double quotes
-        trim = lambda s: s[1:-1]
-        return sorted(map(trim, dirtyNames))
-
-def totalNameScore(names):
-        scoreCard = getScoreCard()
-        atoi = lambda c: scoreCard[c]
-        nameScore = lambda i: (i+1)*sum(map(atoi, names[i]))
-        return sum(map(nameScore, range(len(names))))
-
-def getScoreCard():
-        # Create lookup dictionary of {A:1, B:2, ..., Z:26}
-        score = lambda n: (chr(ord('A')+n), n+1)
-        return dict(map(score, range(26)))
+import timeit
+startTime = timeit.default_timer()
 
 main()
+
+stopTime = timeit.default_timer()
+print("This program took {:.5f} seconds to run.".format(stopTime-startTime)) 
